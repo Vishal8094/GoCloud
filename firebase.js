@@ -34,7 +34,7 @@ export const userSignIn = async() =>{
             const user= result.user;
             onAuthStateChanged(auth,(user)=>{
                 if(user){
-                    window.location.href="home.html";
+                    window.location.href="../HTML/home.html";
                     document.cookie = `email=${user.email}`;
                 }
                 else{
