@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCloud</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h2 class="Logo" style="color: #fff;">GoCloud</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Purchase</a>
+            <a href="#">Help</a>
+            <a href="#">About</a>
+            <button class="btnLogin-popup" id="disappear">Login</button>
+        </nav>
+    </header>
+
+    <span id="mytext" ></span>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+    <!-- Setup and start animation! -->
+    <script >
+      var typed = new Typed('#mytext', {
+        strings: ['Ascend to Infinite Horizons:', 'Elevate Your Experience with Our Cloud Sharing Symphony'],
+        typeSpeed: 80,
+      });
+    </script>
+  </body>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2 style="color:#fff;">Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon" style="color: #fff;"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="login-email" required>
+                    <label style="color: #fff;">Email Id</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" style="color: #fff;"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" id="login-password" required>
+                    <label style="color: #fff;">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label style="color:#fff;"><input type="checkbox">Remember me</label>
+                    <a href="#" id="forgot-password">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn" id="login-button">Login</button>
+                <div class="login-register">
+                    <p style="color:#fff">Don't have an account?  <a href="#" class="register-link">Make One</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2 style="color:#fff;">Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon" style="color: #fff;"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input  id="register_email" type="email" required>
+                    <label style="color: #fff;">Email Id</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" style="color: #fff;"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input id="register_password" type="password" required>
+                    <label style="color: #fff;">Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" style="color: #fff;"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input id="confirm_password" type="password" required>
+                    <label style="color: #fff;">Confirm Password</label>
+                </div>
+               
+                <button type="submit" class="btn" id="registration_button">Register</button>
+                <div class="login-register">
+                    <p style="color:#fff">Already have an account?  <a href="#" class="login-link">Login</a></p>
+                </div>
+                <button type="button" class="google" id="signin"></button>
+            </form>
+        </div>
+    </div>
+  
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type ="module" src="../Javascript/main.js"></script>
+</body>
+</html>

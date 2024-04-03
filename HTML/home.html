@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="../CSS/home.css">
+  
+</head>
+<body>
+    <div class="sidebar">
+        <header>GoCloud</header>
+        <ul>
+            <li><a href="#"><box-icon name='folder-open' color="#ffff"></box-icon>All files </a></li>
+            <li><a href="#"><box-icon name='dollar' color='#ffffff' ></box-icon>Purchase</a></li>
+            <li><a href="#"><box-icon name='share' color='#ffffff' ></box-icon>Shared</a></li>
+            <li><a href="#"><box-icon name='trash' color='#ffffff' ></box-icon></ion-icon>Deleted Files</a></li>
+            <li><a href="#"><box-icon name='folder-open' color='#ffffff' ></box-icon></ion-icon>Folders</a></li>
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="flex-box">
+            <div class="card-1">
+                <box-icon name='upload' color='#ffffff' ></box-icon>
+                <p>Upload</p>
+            </div>
+            <div class="card" id="create">
+                <box-icon name='plus' color='#ffffff' ></box-icon>
+                <p>Create </p>
+            </div>
+            <div class="card" id="delete">
+                <box-icon name='edit-alt' type='solid' color='#ffffff' ></box-icon>
+                <p>Delete</p>
+            </div>
+            <div class="card">
+                <box-icon name='download' type='solid' color='#ffffff' ></box-icon>
+                <p>Download</p>
+            </div>
+        </div>
+        <div class="drag-area">
+            <h2>Drag & Drop to Upload File</h2>
+            <span>or</span>
+            <button>Browse File</button>
+            <input type="file" hidden id="file-input">
+            <h4></h4>
+        </div>
+
+       
+        <main class="table" id="customers_table">
+            <section class="table__header">
+                <h1 style="color: white;" id="path">All Files</h1>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th style="color:white;font-size: 20px; font-weight: 200;"> File No.</th>
+                            <th style="color: white; font-size: 20px; font-weight: 200;"> File Name </th>
+                            <th style="color: white; font-size: 20px; font-weight: 200;"> Type </th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+            
+        </main>
+        
+    </div>
+    
+    <!-- <div class="container">
+        <div class="items">
+          <div class="items-head">
+            <p>Files :</p>
+            <hr>
+          </div>
+          
+          <div class="items-body">
+            <div class="items-body-content">
+              <span>File1.txt</span>
+              <i class="fa fa-angle-right"></i>
+            
+          </div>
+        </div>
+      </div> -->
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="../Javascript/script.js"></script>
+</body>
+</html>
